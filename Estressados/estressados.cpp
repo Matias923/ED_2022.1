@@ -181,18 +181,17 @@ vector<int> exclusivos(const vector<int> fila){ // !!
     return unicos;
 }
 vector<int> diferentes(const vector<int>& fila){ // !!
-    vector<int> copia;
-    for(auto i = fila.begin(); i != fila.end(); i++){
-        copia.push_back(*i);
-    }
-    for(auto i = copia.begin(); i != copia.end(); i++){
-        for(auto j = i+1; j != copia.end(); j++){
-            if(*i!=*j) copia.erase(j);// retira os diferentes
-        }
+    vector<int> repetidos;
+    int i = 0;
+    repetidos.size(fila);
+    for(auto elem : fila){
+        if(elem == repetidos[i])
     }
     return copia;
 }
-vector<int> abandonados(const vector<int>& v);
+vector<int> abandonados(const vector<int>& v){
+    
+}
 // FIM BLOCO II
 // BLOCO III
 vector<int> sozinhos(const vector<int>& fila);
