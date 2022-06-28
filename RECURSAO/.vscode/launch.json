@@ -12,7 +12,7 @@
       "program": "c:/Users/matia/Documents/Repositorios/ED_2022.1/ED_2022.1/Recursão/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
-      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+      "miDebuggerPath": "C:/mingw64/bin/gcc.exe",
       "console": "integratedTerminal",
       "setupCommands": [
         {
