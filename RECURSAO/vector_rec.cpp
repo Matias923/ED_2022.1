@@ -36,28 +36,34 @@ int sum(int * num, int tam){
         return 0;
     return *num + sum(num+1, tam-1);
 }
+
 int mult(int * num, int tam){
     if(tam > 0)
-    return *num + mult(num, tam-1);
-    return 0;
+    return *num * mult(&num[1], tam-1);
+    return 1;
 }
-// int min(int * num){
-
-// }
+int min(int * num, int tam){
+    int menor = 10000;
+    if(menor > *num){
+        menor = *num;
+        return (*num+1, tam-1);
+    }
+    else return 1;
+}
 // int inv(int * num){
 
 // }
 
 int main(){
     
-    int num[] = {1,2,3,4,5};
+    int num[] = {10,2,3,4,5};
     int tam = sizeof(num)/sizeof(int);
 
     vet(num, tam);
     rvet(num, tam);
     std::cout << sum(num, tam) << "\n";
     std::cout << mult(num, tam) << "\n";
-    // min(num);
+    std::cout << min(num, tam);
     // inv(num);
     
     return 0;
